@@ -1,0 +1,76 @@
+// Fonts
+$font: "Helvetic neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$logo-font: "Harlow Solid";
+
+// Colors
+$blue: #377FEA;
+$purple: #710B79;
+$teal: #00C5DE;
+$pink: #C901A1;
+$orange: #F88810;
+$navy: #253267;
+$white: rgb(255, 255, 255);
+
+// Styles
+.banner-container {
+  color: $white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media (max-width: 568px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 45%;
+    min-width: 45%;
+    
+    @media (max-width: 568px) {
+      width: 100%;
+      justify-content: center;
+      
+    }
+
+    .top-center-img {
+      width: 50%;
+      border-radius: 50%;
+
+      @media (max-width: 568px) {
+        width: 60%
+      }
+      
+    }
+  }
+
+  .blurb-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: $white;
+    width: 45%;
+    min-width: 45%;
+    margin: 0 15px;
+    
+    @media (max-width: 568px) {
+      width: 60%;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    p {
+      font-size: 1.25rem;
+      text-align: left;
+      @media (max-width: 568px) {
+        text-align: center;
+      }
+    }
+  }
+
+
+  
+}
+

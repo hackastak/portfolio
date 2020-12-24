@@ -1,0 +1,39 @@
+// Fonts
+$font: "Helvetic neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$logo-font: "Harlow Solid";
+
+// Colors
+$blue: #377fea;
+$purple: #710b79;
+$teal: #00c5de;
+$pink: #c901a1;
+$orange: #f88810;
+$navy: #253267;
+$white: rgb(255, 255, 255);
+
+// Styles
+html,
+body {
+  background: $navy;
+  font-family: $font;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 15px;
+  .header {
+    height: 100px;
+    z-index: 10;
+  }
+
+  .banner {
+    z-index: 9;
+
+  }
+}
