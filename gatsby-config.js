@@ -1,6 +1,7 @@
-
-
 module.exports = {
+  siteMetadata: {
+    title: 'Dev.Wig Portfolio'
+  },
   plugins: [
     "gatsby-plugin-postcss",
     {
@@ -9,11 +10,32 @@ module.exports = {
         trackingId: "UA-174582659-1",
       },
     },
+    {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: [
+          "Ubuntu",
+          "sans serif\:300, 400, 400i, 700"
+        ],
+        display: "swap"
+      },
+    },
+    {
+      resolve: "gatsby-plugin-prefetch-google-fonts",
+      options: {
+        fonts: [
+          {
+            family: "Ubuntu",
+            variants: ["300", "400", "400i", "700"]
+          },
+        ],
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
         name: "GatsbyJS",
         short_name: "GatsbyJS",
@@ -51,6 +73,14 @@ module.exports = {
         name: "components",
         path: "./src/components/",
       },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/
+        }
+      }
     },
   ],
 };
