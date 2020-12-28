@@ -39,8 +39,8 @@ const Header = () => {
           </div>
           <div className="desktop-navigation">
             <nav>
-              <Link to="/#about">About</Link>
               <Link to="/#work">Work</Link>
+              <Link to="/#About">About</Link>
               <Link to="/#contact">Contact</Link>
               <Link to="/#links">Links</Link>
             </nav>
@@ -57,10 +57,10 @@ const Header = () => {
               
               <ul>
                 <li>
-                  <a href="/">About</a>
+                  <a href="/">Work</a>
                 </li>
                 <li>
-                  <a href="/">Work</a>
+                  <a href="/">About</a>
                 </li>
                 <li>
                   <a href="/">Contact</a>

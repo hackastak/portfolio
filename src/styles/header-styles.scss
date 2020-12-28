@@ -1,5 +1,6 @@
 // Fonts
-$font: "Helvetic neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$header-font: "Helvetic neue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$font: "Ubuntu", sans-serif;
 $logo-font: "Harlow Solid";
 
 // Colors
@@ -44,10 +45,12 @@ $white: rgb(255, 255, 255);
 
 //Header
 header {
+  background-image: linear-gradient($navy 75%, rgba(255, 255, 255, 0));
   height: 80px;
   width: 100%;
   position: fixed;
   top: 0px;
+  padding-bottom: 25px;
   .inner-header {
     display: flex;
     align-items: center;
@@ -83,11 +86,11 @@ header {
         a {
           margin: 0 10px;
           font-weight: 700;
-          font-size: 0.75rem;
+          font-size: 1rem;
           text-decoration: none;
           text-transform: uppercase;
           letter-spacing: 1.5px;
-          color: white;
+          color: rgb(185, 185, 185);
           &:last-child {
             margin-right: 0px;
           }
@@ -96,8 +99,18 @@ header {
             transition: all 300ms ease;
             -webkit-transition: all 300ms ease;
           }
+          @media (min-width: 568px) {
+            font-size: 0.6rem;
+          }
+          @media (min-width: 768px) {
+            font-size: 0.8rem;
+          }
+          @media (min-width: 1024px) {
+            font-size: 1rem;
+          }
         }
       }
+      
       @media (max-width: 568px) {
         display: none;
       }
@@ -109,13 +122,14 @@ header {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        width: 3rem;
+        width: 100%;
         height: 3rem;
         background: transparent;
         border: none;
         outline: none;
         padding: 10px;
         border-radius: 10px;
+        margin-right: 50px;
         &:hover {
           cursor: pointer;
           .top-line{
@@ -155,8 +169,8 @@ header {
         align-items: center;
         text-align: center;
         height: 150px;
-        width: 100%;
-        top: 100px;
+        width: 105%;
+        top: 80px;
         right: 0;
         background-image: linear-gradient($navy, $purple);
         transition: all 300ms ease;
@@ -171,7 +185,7 @@ header {
         a {
           text-decoration: none;
           color: white;
-          font-size: 0.75rem;
+          font-size: 1rem;
           font-weight: 700;
           text-transform: uppercase;
           &:hover {
