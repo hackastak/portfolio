@@ -1,3 +1,4 @@
+//Import Dependencies
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
@@ -7,6 +8,7 @@ import { FaInstagramSquare } from 'react-icons/fa';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaTwitterSquare } from 'react-icons/fa';
 
+//Import Styles
 import '../styles/css-reset.css';
 import '../styles/banner-styles.scss';
 
@@ -33,11 +35,11 @@ const Banner = () => {
         <p>Hi, my name is Hunter Wiginton.</p>
         <p>I am a web developer and graphic designer. </p>
         <p>Have an idea?</p>
-        <button>Let's talk!</button>
+        <button>Let's Talk!</button>
         <div className="social-link-container">
-          <a className="social-icon" target="_blank" href="https://www.instagram.com/dev.wig/"><FaInstagramSquare /></a>
-          <a className="social-icon" target="_blank" href="https://www.facebook.com/hunter.wiginton.3/"><FaFacebookSquare /></a>
-          <a className="social-icon" target="_blank" href="https://www.facebook.com/hunter.wiginton.3/"><FaTwitterSquare /></a>
+          <a className="social-icon" target="_blank" rel="noreferrer" href="https://www.instagram.com/dev.wig/"><FaInstagramSquare alt="Instagram"/></a>
+          <a className="social-icon" target="_blank" rel="noreferrer" href="https://www.facebook.com/hunter.wiginton.3/"><FaFacebookSquare alt="Facebook"/></a>
+          <a className="social-icon" target="_blank" rel="noreferrer" href="https://twitter.com/wiginton_hunter"><FaTwitterSquare alt="Twitter"/></a>
         </div>
         
         
