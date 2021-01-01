@@ -14,8 +14,9 @@ module.exports = {
       resolve: "gatsby-plugin-google-fonts",
       options: {
         fonts: [
-          "Ubuntu",
-          "sans serif\:300, 400, 400i, 700"
+            "Ubuntu",
+            "Spectral",
+            "Pacifico",
         ],
         display: "swap"
       },
@@ -28,6 +29,13 @@ module.exports = {
             family: "Ubuntu",
             variants: ["300", "400", "400i", "700"]
           },
+          {
+            family: "Spectral",
+            variants: ["400", "700", "700i", "800"]
+          },
+          {
+            family: "Pacifico"
+          }
         ],
       },
     },
