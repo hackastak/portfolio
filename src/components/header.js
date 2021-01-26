@@ -40,9 +40,9 @@ const Header = () => {
           <div className="desktop-navigation">
             <nav>
               <Link to="/#work">Work</Link>
-              <Link to="/#About">About</Link>
+              <Link to="/#about">About</Link>
               <Link to="/#contact">Contact</Link>
-              <Link to="/#links">Links</Link>
+              <Link target="_blank" rel="noreferrer" to="https://heyper.link/dev.wig">Links</Link>
             </nav>
           </div>
           <div className="mobile-navigation">
@@ -57,16 +57,16 @@ const Header = () => {
               
               <ul>
                 <li>
-                  <a href="/">Work</a>
+                  <a href="/#work">Work</a>
                 </li>
                 <li>
-                  <a href="/">About</a>
+                  <a href="/#about">About</a>
                 </li>
                 <li>
-                  <a href="/">Contact</a>
+                  <a href="/#contact">Contact</a>
                 </li>
                 <li>
-                  <a href="/">Links</a>
+                  <a target="_blank" rel="noreferrer" href="https://heyper.link/dev.wig">Links</a>
                 </li>
               </ul>
               
