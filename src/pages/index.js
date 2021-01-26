@@ -12,22 +12,27 @@ import Header from '../components/header';
 import Banner from '../components/banner';
 import Work from '../components/work';
 import About from '../components/about';
+import Contact from '../components/contact';
+
 
 // Index Page markup
 const IndexPage = () => (
   
   <div className="index-container">
-    <div className="header">
+    <div className="header" id="header">
       <Header />
     </div>
-    <div className="banner">
+    <div className="banner" id="banner">
       <Banner />
     </div>
-    <div className="work">
+    <div className="work" id="work">
       <Work />
     </div>
-    <div className="about">
-      
+    <div className="about" id="about">
+      <About />
+    </div>
+    <div className="contact" id="contact">
+      <Contact />
     </div>
   </div>
     
