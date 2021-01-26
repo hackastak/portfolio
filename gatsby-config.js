@@ -49,8 +49,8 @@ module.exports = {
         name: "Dev.Wig Portfolio",
         short_name: "Portfolio",
         start_url: "/",
-        background_color: "#f7f0eb",
-        theme_color: "#a2466c",
+        background_color: "#253267",
+        theme_color: "#253267",
         display: "standalone",
         icon: "src/images/icon.png"
       },
