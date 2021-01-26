@@ -1,0 +1,122 @@
+// Fonts
+$header-font: "Spectral", serif;
+$font: "Ubuntu", sans-serif;
+$logo-font: "Pacifico", cursive;
+
+// Colors
+$blue: #377fea;
+$purple: #710b79;
+$tran-purple: #720b7979;
+$teal: #00c5de;
+$pink: #c901a1;
+$orange: #f88810;
+$navy: #253267;
+$white: rgb(255, 255, 255);
+
+// Styles
+.container-title {
+  color: white;
+  text-align: center;
+  font-variant: small-caps;
+  font-family: $header-font;
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 75px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.underline-container {
+  display: flex;
+  justify-content: center;
+  .underline {
+    height: 2px;
+    width: 100px;
+    text-align: center;
+    background-color: $pink;
+    margin: 0 0 20px 0;
+  }
+}
+
+.about-me-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 5% 0 5%;
+  @media (max-width: 768) {
+    flex-direction: column-reverse;
+  }
+  @media (min-width: 1024px) {
+    margin: 0 1% 0 15%;
+  }
+  @media (min-width: 1660px) {
+    margin: 0 20% 0 20%;
+  }
+  @media (min-width: 2048px) {
+    margin: 0 25% 0 25%;
+  }
+
+  .about-me-blurb-container {
+    font-family: $font;
+    font-size: 0.9rem;
+    color: white;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    .about-me-blurb {
+      margin-bottom: 0.9rem;
+      text-align: justify;
+    }
+  }
+  .about-me-photo-container {
+    width: 45%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    .about-me-profile-photos {
+      width: 90%;
+      margin: 5%;
+      background-color: $tran-purple;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .upper-left-photo-container {
+        display: flex;
+        justify-content: flex-start;
+
+        .upper-left-photo {
+          margin: -5%;
+          min-width: 250px;
+          max-width: 250px;
+          border-radius: 10px;
+        }
+      }
+      .mid-right-photo-container {
+        display: flex;
+        justify-content: flex-end;
+        .mid-right-photo {
+          margin: -5%;
+          min-width: 250px;
+          max-width: 250px;
+          border-radius: 10px;
+        }
+      }
+      .bottom-left-photo-container {
+        display: flex;
+        justify-content: flex-start;
+        .bottom-left-photo {
+          margin: -5%;
+          min-width: 250px;
+          max-width: 250px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
