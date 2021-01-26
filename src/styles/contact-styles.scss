@@ -1,0 +1,89 @@
+// Fonts
+$header-font: "Spectral", serif;
+$font: "Ubuntu", sans-serif;
+$logo-font: "Pacifico", cursive;
+
+// Colors
+$blue: #377fea;
+$purple: #710b79;
+$teal: #00c5de;
+$pink: #c901a1;
+$orange: #f88810;
+$navy: #253267;
+$white: rgb(255, 255, 255);
+
+// Styles
+.container-title {
+  color: white;
+  text-align: center;
+  font-variant: small-caps;
+  font-family: $header-font;
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 75px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.underline-container {
+  display: flex;
+  justify-content: center;
+  .underline {
+    height: 2px;
+    width: 100px;
+    text-align: center;
+    background-color: $pink;
+    margin: 0 0 20px 0;
+  }
+}
+
+.contact-info-container {
+  width: 100%;
+  font-family: $font;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .contact-message-container {
+    margin-top: 25px;
+    width: 70%;
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+    @media (min-width: 1924px) {
+      width: 35%;
+    }
+    @media (min-width: 1660px) {
+      width: 25%;
+    }
+    .contact-message {
+      color: white;
+      text-align: center;
+    }
+  }
+  .contact-options-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+    @media (min-width: 1924px) {
+      width: 35%;
+    }
+    @media (min-width: 1660px) {
+      width: 25%;
+    }
+    .contact-option {
+      color: white;
+      font-size: 3rem;
+      margin-top: 50px;
+      &:hover {
+        color: $pink;
+        transition: all 300ms ease;
+      }
+    }
+  }
+}
