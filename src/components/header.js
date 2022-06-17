@@ -42,7 +42,7 @@ const Header = () => {
               <Link to="/#work">Work</Link>
               <Link to="/#about">About</Link>
               <Link to="/#contact">Contact</Link>
-              <Link target="_blank" rel="noreferrer" to="https://heyper.link/dev.wig">Links</Link>
+              <Link target="_blank" rel="noreferrer" to="https://linktr.ee/dev.wig">Links</Link>
             </nav>
           </div>
           <div className="mobile-navigation">
