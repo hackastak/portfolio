@@ -109,7 +109,7 @@ const Work = () => {
             <Img className="site-image" fluid={data.spcImg.childImageSharp.fluid}   alt="SPC Site Snapshot"/>
           </div>
           <h1 className="project-card-title">Shady Print Co.</h1>
-          <p className="project-card-description">Family owned and operated by a  sibling duo of graphic designers, this site serves as a display design   talents while offering their following a way to support them.</p>
+          <p className="project-card-description">Family owned and operated by a sibling duo of graphic designers, this site serves as a display of design talents while offering their following a way to support them.</p>
           <div className="project-card-tech-icons"></div>
           <a href="https://shadyprintco.com" target="_blank" rel="noopener  noreferrer">View Project</a>
         </div>
@@ -118,7 +118,7 @@ const Work = () => {
             <Img className="site-image" fluid={data.ljImg.childImageSharp.fluid}  alt="LJ Site Snapshot"/>
           </div>
           <h1 className="project-card-title">Leclear Jewelry</h1>
-          <p className="project-card-description">Locally owned and family  operated since before the internet even existed, this modest site is the   MVP and first step to building their online presence.</p>
+          <p className="project-card-description">Locally owned and family operated since before the internet even existed, this modest site is the MVP and first step to building their online presence.</p>
           <div className="project-card-tech-icons"></div>
           <a href="https://leclearjewelry.com" target="_blank" rel="noopener noreferrer">View  Project</a>
 
