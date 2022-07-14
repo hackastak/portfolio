@@ -39,7 +39,7 @@ const Banner = () => {
         <div className="social-link-container">
           <a className="social-icon" target="_blank" rel="noreferrer" href="https://www.instagram.com/dev.wig/"><FaInstagramSquare alt="Instagram"/></a>
           <a className="social-icon" target="_blank" rel="noreferrer" href="https://www.facebook.com/hunter.wiginton.3/"><FaFacebookSquare alt="Facebook"/></a>
-          <a className="social-icon" target="_blank" rel="noreferrer" href="https://twitter.com/wiginton_hunter"><FaTwitterSquare alt="Twitter"/></a>
+          <a className="social-icon" target="_blank" rel="noreferrer" href="https://twitter.com/devwig"><FaTwitterSquare alt="Twitter"/></a>
         </div>
         
         
